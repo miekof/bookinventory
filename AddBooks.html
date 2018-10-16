@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <script>
+    
+    // Prevent forms from submitting.
+      function preventFormSubmit() {
+        var forms = document.querySelectorAll('form');
+        for (var i = 0; i < forms.length; i++) {
+          forms[i].addEventListener('submit', function(event) {
+            event.preventDefault();
+          });
+        }
+      }
+      window.addEventListener('load', preventFormSubmit);
+      
+       function handleFormSubmit(formObject) {
+        google.script.run.withSuccessHandler(display).processForm(formObject);
+      }
+      
+      function display(searchResult) {
+        var div = document.getElementById('output');
+        div.innerHTML = searchResult;
+      }
+      
+      function clearSearchResult(){
+      var div = document.getElementById('output');
+      div.innerHTML = "";
+      }
+      
+    </script>
+  </head>
+  
+  <body>
+    <form onsubmit="handleFormSubmit(this)">
+  ISBN: <input type="text" name="isbn">
+  <input type="submit" value="Submit">
+  </form>
+  <input type="submit" value="Clear Search" onclick="clearSearchResult()" />
+  <input type="submit" value="Close" onclick="google.script.host.close()" />
+  <div id="output"></div>
+  </body>
+</html>
+
+
