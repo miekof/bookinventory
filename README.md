@@ -12,7 +12,7 @@ We have worked on the performance of major book search API's. Please refer [Book
 * Elastic Search
 
 # How to Run
-WIP
+The working code is deployed at https://docs.google.com/spreadsheets/d/1x0BDHCvgq7j71Tsj6w8Fsq0GdYdv_VLSoj_8iKkVC0c/edit#gid=0. Copy the sheet to your own Google Drive. Go to the Book Inventory -> Add books. (It will ask you multiple security questions.). If you are not sure what you are allowing, you can go to Tools -> Script editor and see what's being executed. 
 
 # Want to Contribute?
 Anyone is welcome to join the team. The best way is to attend one of events held by Chi Hack Night every Tuesdays. (There are some exceptions.) [Chi Hack Night](https://chihacknight.org/). You don't live in the Chicago area? No problem! Join our Slack channel: http://slackme.chihacknight.org/ #bookstowomeninprison, and we are also using Google Groups to communicate:[Google Groups](https://groups.google.com/forum/?hl=en#!forum/books-to-women-in-prison)
